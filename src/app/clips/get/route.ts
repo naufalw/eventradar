@@ -7,5 +7,5 @@ export async function GET() {
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
     ];
-    return Response.json({ videos: videos })
+    return Response.json({ videos: [videos[Math.floor(Math.random()*4)]] })
 }
